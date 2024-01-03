@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "Sealing_30091": {
+      "type": "object",
+      "properties": {
+        "ProcessID": {
+          "type": "string"
+        },
+        "Result": {
+          "type": "boolean"
+        },
+        "ProcessData": {
+          "type": "object",
+          "properties": {
+            "Volume_NV": {
+              "type": "number"
+            },
+            "Volume_AV": {
+              "type": "number"
+            },
+            "Charge": {
+              "type": "string"
+            },
+            "MaterialPressure_AV": {
+              "type": "string"
+            },
+            "ApplicationSpeed_AV": {
+              "type": "string"
+            },
+            "PreheatTemperature_AV": {
+              "type": "string"
+            },
+            "CupshotResult": {
+              "type": "string"
+            },
+            "StartPotLife": {
+              "type": "string",
+			  "format": "date-time"
+            },
+            "CupshotVolume": {
+              "type": "string"
+            },
+            "CupshotWeight": {
+              "type": "string"
+            },
+            "CupshotDate": {
+              "type": "string",
+			  "format": "date-time"
+            }
+          },
+          "required": [
+            "Volume_NV",
+            "Volume_AV",
+            "Charge",
+            "MaterialPressure_AV",
+            "ApplicationSpeed_AV",
+            "PreheatTemperature_AV",
+            "CupshotResult",
+            "StartPotLife",
+            "CupshotVolume",
+            "CupshotWeight",
+            "CupshotDate"
+          ]
+        }
+      },
+      "required": [
+        "ProcessID",
+        "Result",
+        "ProcessData"
+      ]
+    }
+  },
+  "required": [
+    "Sealing_30091"
+  ]
+}

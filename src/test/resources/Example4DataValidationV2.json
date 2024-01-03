@@ -1,0 +1,21 @@
+{
+ 
+     "Sealing_30091": {
+        "ProcessID": "30091",
+        "Result": true,
+        "ProcessData": {
+			"Volume_NV": 410.5,
+			"Volume_AV": 407.7,
+			"Charge": "0000957321",
+			"MaterialPressure_AV": "43.31",
+			"ApplicationSpeed_AV": "0.158790365",
+			"PreheatTemperature_AV": "0",
+			"CupshotResult": "1",
+			"StartPotLife": "2022-06-22T08:21:33.4300238Z",
+			"CupshotVolume": "39.7",
+			"CupshotWeight": "49.69",
+			"CupshotDate": "2022-06-22T08:22:56.4085953Z"
+			}            
+        }
+ 
+}
