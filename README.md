@@ -22,12 +22,13 @@ Der Validierungsdienst kann in der Datei „application.properties“ konfigurie
 
  ![image](https://github.com/user-attachments/assets/d5562280-bd46-477b-abe9-e8d21e85696e)
 
-In der Datei können Sie den Server-Port des Validierungsdienstes konfigurieren. Die URL des sermantischen Hubs und die Version des Validators, der zur Validierung der JSON-Datei mit dem JSON-Schema verwendet wird. Die Standardversion ist „V7“. 
+In der Datei können Sie den Server-Port des Validierungsdienstes, die URL des sermantischen Hubs und die Version des Validators, der zur Validierung der JSON-Datei mit dem JSON-Schema verwendet wird, konfigurieren. Die Standardversion ist „V7“.
 
-![image](https://github.com/user-attachments/assets/208ff16f-c763-443f-be9f-99232ab5fd2f)
+![image](https://github.com/user-attachments/assets/a2e17ece-4e64-4b75-a285-dfdfbb00bcb4)
+
 ### Einrichten der Testumgebung
-Um den Validierungsdienst zu testen, muss zu Testzwecken ein semantischer Hub eingerichtet werden. Im Ordner „../src/test/java“, im Paket „com.example.restservice“, befindet sich ein Dummy-Semantic Hub. Die Klasse ist eine Hauptklasse. Um den semantischen Hub zu starten, klicken Sie mit der rechten Maustaste auf die Klasse->Ausführen als->Java-Anwendung. Die semantische Drehscheibe wird ges-tartet und lädt alle Shells und Submodelle hoch, die zum Testen verwendet werden. Die vorkonfigu-rierten Shells und Submodelle sind in ../src/test/resources verfügbar. Die JSON-Datei (aas-env-1.JSON) definiert alle Shells und Submodelle. 
-Der semantische Knotenpunkt wird unter „http:/localhost:8081/submodels“ verfügbar sein. Sie können die Konfiguration der semantischen Drehscheibe über die Datei application.properties ändern, die Sie unter --/src/test/resources finden.
+Um den Validierungsdienst zu testen, muss zu Testzwecken ein semantischer Hub eingerichtet werden. Im Ordner „../src/test/java“, im Paket „com.example.restservice“, befindet sich ein Dummy-Semantic Hub. Die Klasse ist eine Hauptklasse. Um den semantischen Hub zu starten, klicken Sie mit der rechten Maustaste auf die Klasse->Ausführen als->Java-Anwendung. Der semantische Hub wird gestartet und lädt alle Shells und Submodelle hoch, die zum Testen verwendet werden. Die vorkonfigurierten Shells und Submodelle sind in ../src/test/resources verfügbar. Die JSON-Datei “aas-env-1.json” definiert alle Shells und Submodelle. 
+Der semantische Hub wird unter „http:/localhost:8081/submodels“ verfügbar sein. Die Konfiguration des semantischen Hubs kann über die Datei application.properties erfolgen, die sich unter --/src/test/resources befindet.
 
 ![image](https://github.com/user-attachments/assets/b13a0038-e964-4960-b607-0b37cd26d90f)
 
