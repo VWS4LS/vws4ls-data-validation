@@ -13,7 +13,22 @@ Die Validierung schlägt fehl, wenn die JSON-Datei nicht mit dem JSON-Schema üb
 
 Wenn der Dienst mit einer nicht bekannten Semantic-ID fehlschlägt, gibt der Dienst 404 mit einer Fehlermeldung zurück.
 
- ### Dienst starten
+### Installation 
+- Installieren Sie das Java JDK 17; 
+- Installieren Sie die Eclipse IDE für Java EE Developer; 
+- Installieren Sie das Maven-Plugin für Eclipse m2eclipse.
+- Checken Sie den Quellcode von (https://github.com/VWS4LS/vws4ls-data-validation/) aus.
+- Importieren Sie das Projekt in die Eclipse IDE. Die Schritte für den Import sind die folgenden:
+- Datei->Importieren...-> bestehendes Maven-Projekt
+- Wählen Sie den Projektordner des Java-Projekts aus, überprüfen Sie die pom.xml-Datei dieses Projektordners und klicken Sie dann auf finish
+- Danach wird Eclipse das Projekt in den Arbeitsbereich importieren.
+ 
+### Erstellen des Java-Projekts
+- Klicken Sie im Projektexplorer mit der rechten Maustaste auf das „rest-service“ Projekt -> Ausführen als -> maven build... 
+- Im Pop-up-Fenster im Feld „Goals“ „clean install“ eingeben, das Kästchen „SkiptTest“ ankreuzen. Dann klicken Sie auf „Ausführen
+- Wenn der Build erfolgreich war, sollte er in der Konsole angezeigt werden:
+
+### Dienst starten
 Der Validierungsdienst kann durch Ausführen der Hauptklasse „ValidationServiceApplication.java“ gestartet werden, die sich im Paket „org.arena.restservice“ befindet. Klicken Sie mit der rechten Maustaste auf die Klasse „ValidationServiceApplication.java“->Ausführen als->Java-Anwendung.
 
 ![image](https://github.com/user-attachments/assets/c553dd0e-91a1-4f54-ae75-739e19329c97)
